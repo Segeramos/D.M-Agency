@@ -1,32 +1,117 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import Button from './Button';
+import { Menu, X } from 'lucide-react';
 
 
-const navItems = [
-    {
+// navigation links
+const navLinks = [
+     {
         path: "/",
-        name  : 'Home'
+        label: "Home"
       },
        {
         path: "/about",
-        element: <About />
+        label: "About Us"
       },
        {
         path: "/services",
-        element: <Services />
+        label: "Services"
       },
        {
         path: "/ourWork",
-        element: <OurWork />
+        label: "Our Work"
       },
        {
         path: "/contact",
-        element: <Contact />
+        label: "Contact"
       },
 ]
 
 const Navbar = () => {
+
+  const [nav, setNav] = useState(false);
+
+  // function to toggle mobile menu
+  const toggleNav = () => {
+    setNav(!nav);
+  }
+
+
   return (
-    <div>Navbar</div> 
+    <nav className="w-full border-b border-neutral-800">
+
+      <div className="w-[90%] mx-auto flex justify-between py-4 items-center">
+        <Link to="/">
+          Logo
+        </Link>
+
+        <div className="flex items-center gap-8">
+          <ul className="md:flex gap-6 hidden">
+            {
+              navLinks.map((link, index) => (
+                <li key={index} className="hover:text-[#f97316] text-sm">
+                    <NavLink 
+                      to={link.path}
+                      className={({isActive, isPending}) => (
+                        isActive ? "active" : isPending ? "pending" : ""
+                      ) }
+                    >
+                      {link.label}
+                    </NavLink>
+                </li>
+              ))
+            }
+          </ul>
+          <div className="hidden md:block">
+            <Button 
+              className="border border-neutral-800 px-6 py-2 rounded-md"
+              label="SignUp"
+            />
+          </div>
+          <button
+            onClick={toggleNav}
+            className="block md:hidden border p-[0.8] text-[#f97316] cursor-pointer"
+          >
+            {
+              nav ? <Menu size={20} className="text-[#f97316]" /> : <X  size={20} className="text-[#f97316] " />
+            }
+          </button>
+        </div>
+
+      </div>
+
+      {/* mobile menu */}
+      {
+        nav && (
+          <div className="w-[90%] mx-auto mt-4 flex flex-col justify-center items-center">
+            <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center">
+              {
+                navLinks.map((link, index) => (
+                  <li key={index} className="hover:text-[#f97316] text-sm ">
+                      <NavLink 
+                        to={link.path}
+                        className={({isActive, isPending}) => (
+                          isActive ? "active" : isPending ? "pending" : ""
+                        ) }
+                      >
+                        {link.label}
+                      </NavLink>
+                  </li>
+                ))
+              }
+            </ul>
+            <div className="block md:hidden mt-4">
+              <Button 
+                className="border border-neutral-800 px-6 py-2 rounded-md"
+                label="SignUp"
+              />
+            </div>
+          </div>
+        )
+      }
+
+    </nav>
   )
 }
 
