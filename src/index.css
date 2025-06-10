@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+html {
+    background: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.active {
+    @apply text-[#f97316] underline underline-offset-8
+}
