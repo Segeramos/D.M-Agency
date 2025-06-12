@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import ourService from '../assets/images/services.jpg';
+import Banner from '../components/Banner';
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section>
+      <Banner
+        image={ourService}
+        alt="Our services image"
+      />
+    </section>
   )
 }
 
