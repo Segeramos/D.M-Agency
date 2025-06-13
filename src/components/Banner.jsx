@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button';
 
-const Banner = ({image, alt}) => {
+const Banner = ({image, alt, content}) => {
   return (
     <section className="w-full h-96 relative">
         <img className="w-full h-full object-cover "
@@ -13,7 +13,7 @@ const Banner = ({image, alt}) => {
                 Welcome to our website
             </h2>
             <p>
-                Explore our services and products
+                {content}
             </p>
             <Button 
                 label="Learn More"

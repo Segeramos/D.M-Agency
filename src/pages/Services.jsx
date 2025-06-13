@@ -8,7 +8,15 @@ const Services = () => {
       <Banner
         image={ourService}
         alt="Our services image"
+        content="explore our latest service"
       />
+
+
+
+     
+   
+  
+
     </section>
   )
 }

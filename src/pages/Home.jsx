@@ -1,30 +1,30 @@
 import React from 'react';
+import Button from '../components/Button';
+import Banner from '../components/Banner';
+import heroImg from '/hero.png'
+ 
+
 
 const services = [
   {
     title: "SEO Optimization",
-    desc: "Improve your website’s visibility and rankings with expert SEO strategies.",
-    path: "/services/seo-optimization"
+    desc: "Boost your website’s search rankings and attract organic traffic with proven SEO techniques. From keyword research to on-page and technical SEO, we ensure your business stands out where it matters most—on Google.",
+    path: '/optimization-page',
   },
   {
     title: "PPC Advertising",
-    desc: "Maximize ROI with precisely targeted Google Ads and Facebook campaigns.",
-    path: "/services/ppc-advertising"
+    desc: "Get instant visibility and measurable results with high-converting Google Ads and Facebook Ads. We design, target, and optimize campaigns that deliver maximum ROI with minimal waste.",
+    path: "/pay-per-click-advertising-page"
   },
   {
     title: "Social Media Management",
-    desc: "Engage and grow your audience across all major platforms.",
-    path: "/services/social-media-management"
-  },
-  {
-    title: "Content & Email Marketing",
-    desc: "Drive conversions with compelling content and strategic email outreach.",
-    path: "/services/content-email-marketing"
+    desc: "Build a loyal community and expand your reach on platforms like Facebook, Instagram, LinkedIn, and X. We handle everything from strategy to content creation and daily engagement.",
+    path: "/social-media-management-page"
   },
   {
     title: "Web Design & Development",
-    desc: "Get a stunning, responsive website tailored to your business goals.",
-    path: "/services/web-design-development"
+    desc: "Create a website that works as hard as you do. Our team designs fast, mobile-friendly, and visually engaging websites built to convert—and tailored to your brand’s identity and business goals.",
+    path: "/web-design-development-page"
   }
 ];
 
@@ -47,23 +47,11 @@ const Home = () => {
   return (
     <div className=" text-white">
       {/* Hero Section */}
-      <section
-            className="bg-cover bg-center bg-no-repeat px-6 py-32 min-h-screen flex items-center"
-            style={{
-                backgroundImage: "url('/hero.png')"
-            }}
-            >
-        <div className="max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 ">Grow Your Business with Bookie</h1>
-          <p className="text-lg mb-6">Expert digital marketing services that deliver real results.</p>
-          <button
-            className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md text-white font-semibold transition"
-            onClick={() => window.scrollTo({ top: 700, behavior: 'smooth' })}
-          >
-            Get Started
-          </button>
-        </div>
-      </section>
+      <Banner 
+        image={heroImg}
+        alt='hero image'
+        content="welcome to hero "
+      />
 
       {/* Services Section with Side-by-Side Layout */}
       <section className="bg-black py-20 px-6">
@@ -73,7 +61,7 @@ const Home = () => {
             <img
               src="public\vitalii7577-jW7C-KidYi0-unsplash.jpg"
               alt="Google Search Mobile"
-              className="rounded-xl shadow-xl max-w-full w-[400px]"
+              className="rounded-xl shadow-xl max-w-full w-[400px] hidden md:flex"
             />
           </div>
 
@@ -82,7 +70,7 @@ const Home = () => {
             <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">Our Core Services</h2>
             <div className="space-y-6">
               {services.map((s, i) => (
-                <a key={i} href={s.path} className="block hover:bg-gray-800 p-4 rounded transition duration-200">
+                <a key={i} href={s.path} className="block hover:bg-orange-400 p-4 rounded transition duration-800">
                   <h3 className="text-lg font-semibold text-white">{s.title}</h3>
                   <p className="text-gray-300">{s.desc}</p>
                 </a>

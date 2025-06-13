@@ -8,6 +8,10 @@ import About from './pages/About.jsx';
 import OurWork from './pages/OurWork.jsx';
 import Contact from './pages/Contact.jsx';
 import Services from './pages/Services.jsx';
+import OptimizationPage from './pages/OptimizationPage.jsx';
+import PPCAdvertisingPage from './pages/PPCAdvertisingPage.jsx';
+import WebDesignDevelopmentPage from './pages/WebDesignDevelopmentPage.jsx';
+import SocialMediaManagementPage from './pages/SocialMediaManagementPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,6 +39,23 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
+      {
+        path: "/optimization-page",
+        element: <OptimizationPage />
+      },
+      {
+        path: "/pay-per-click-advertising-page",
+        element: <PPCAdvertisingPage />
+      },
+      {
+        path: "/social-media-management-page",
+        element: <SocialMediaManagementPage />
+      },
+      {
+        path: "/web-design-development-page",
+        element: <WebDesignDevelopmentPage />
+      },
+      
     ]
   }
 ])
