@@ -45,6 +45,7 @@ const faqs = [
 
 const Home = () => {
   return (
+<<<<<<< HEAD
     <div className=" text-white">
       {/* Hero Section */}
       <Banner 
@@ -52,6 +53,11 @@ const Home = () => {
         alt='hero image'
         content="welcome to hero "
       />
+=======
+    <div className="w-full min-h-screen relative">Home</div>
+  )
+}
+>>>>>>> nav
 
       {/* Services Section with Side-by-Side Layout */}
       <section className="bg-black py-20 px-6">
