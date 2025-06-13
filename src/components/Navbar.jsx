@@ -65,7 +65,6 @@ const Navbar = () => {
           </ul>
           <div className="hidden md:block">
             <Button 
-              className="border-2 border-neutral-800/10 px-6 py-2 rounded-md cursor-pointer bg-orange-600 hover:bg-orange-600/80 hover:scale-105 delay-300 transition-transform "
               label="SignUp"
             />
           </div>
@@ -74,7 +73,7 @@ const Navbar = () => {
             className="block md:hidden border p-[0.8] text-[#f97316] cursor-pointer rounded-sm"
           >
             {
-              nav ? <Menu size={20} className="text-[#f97316]" /> : <X  size={20} className="text-[#f97316] " />
+              nav ? <X size={20} className="text-[#f97316]" /> : <Menu  size={20} className="text-[#f97316] " />
             }
           </button>
         </div>
@@ -84,7 +83,7 @@ const Navbar = () => {
       {/* mobile menu */}
       {
         nav && (
-          <div className="w-[90%] h-screen mx-auto flex flex-col justify-center items-center">
+          <div className="w-[90%] h-screen mx-auto flex flex-col justify-center items-center backdrop-blur-2xl md:hidden">
             <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center">
               {
                 navLinks.map((link, index) => (

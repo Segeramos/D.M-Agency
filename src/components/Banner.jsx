@@ -7,6 +7,7 @@ const Banner = ({image, alt, content}) => {
         <img className="w-full h-full object-cover "
             src={image} 
             alt={alt}
+            loading="lazy"
         />
         <div className="absolute inset-0 bg-black/60 flex flex-col items-start justify-end p-12 space-y-6 ">
             <h2 className="text-4xl font-semibold">
