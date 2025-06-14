@@ -4,7 +4,7 @@ import Button from './Button';
 const Banner = ({image, alt, content}) => {
   return (
     <section className="w-full h-96 relative">
-        <img className="w-full h-full object-cover "
+        <img className="w-full h-full object-cover object-center"
             src={image} 
             alt={alt}
             loading="lazy"
