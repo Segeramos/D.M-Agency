@@ -4,11 +4,12 @@ import Banner from '../components/Banner';
 
 const Services = () => {
   return (
-    <section>
+    <section className="w-full min-h-screen">
       <Banner
         image={ourService}
         alt="Our services image"
-        content="explore our latest service"
+        content="Services That Drive Real Business Growth"
+        subContent="From boosting visibility to increasing conversions, we offer everything you need to grow your brand online—strategically, efficiently, and affordably."
       />
 
 
