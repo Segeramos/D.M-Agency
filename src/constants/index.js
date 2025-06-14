@@ -8,26 +8,26 @@ import megaphone from '../assets/icons/megaphone.svg'
 export const servicesContent = [
   {
     icon: chart,
-    title: "SEO Optimization",
-    desc: "Boost your website’s search rankings and attract organic traffic with proven SEO techniques. From keyword research to on-page and technical SEO, we ensure your business stands out where it matters most—on Google.",
+    title: "Search Engine Optimization (SEO)",
+    desc: "Get found on Google and turn searches into sales with expert SEO strategies.",
     path: '/optimization-page',
   },
   {
     icon: megaphone,
-    title: "PPC Advertising",
-    desc: "Get instant visibility and measurable results with high-converting Google Ads and Facebook Ads. We design, target, and optimize campaigns that deliver maximum ROI with minimal waste.",
+    title: "Paid Per Click Advertising",
+    desc: "Maximize ROI with laser-focused Google & Facebook ad campaigns",
     path: "/pay-per-click-advertising-page"
   },
   {
     icon: circle,
     title: "Social Media Management",
-    desc: "Build a loyal community and expand your reach on platforms like Facebook, Instagram, LinkedIn, and X. We handle everything from strategy to content creation and daily engagement.",
+    desc: "Build a loyal following and boost engagement across top platforms",
     path: "/social-media-management-page"
   },
   {
     icon: code,
-    title: "Web Design & Development",
-    desc: "Create a website that works as hard as you do. Our team designs fast, mobile-friendly, and visually engaging websites built to convert—and tailored to your brand’s identity and business goals.",
+    title: "Website Design & Development",
+    desc: "Launch a high-performing, custom website that drives real business growth.",
     path: "/web-design-development-page"
   }
 ];
