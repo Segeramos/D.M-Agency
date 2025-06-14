@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Banner from '../components/Banner';
 import heroImg from '/hero.png'
 import MiniHero from '../components/MiniHero';
+import Accordion from '../components/Accordion';
 
 const Home = () => {
   return (
@@ -15,9 +16,11 @@ const Home = () => {
         content="welcome to hero "
       />
 
-      <MiniHero 
-      />
+      <main>
+        <MiniHero />
+        <Accordion />
 
+      </main>
       
     </section>
   );

@@ -35,15 +35,38 @@ export const servicesContent = [
 
 export const faqs = [
   {
-    question: "What makes Bookie different?",
-    answer: "We focus on measurable results, transparent reporting, and customized strategies.",
+    id: 0,
+    question: "What type of businesses do you work with?",
+    answer: "We work with startups, small businesses, and growing brands across various industries. Whether you're launching your first website or scaling your online presence, we tailor our services to fit your goals.",
   },
   {
-    question: "Which industries do you work with?",
-    answer: "We work across various industries including retail, healthcare, tech, and more.",
+    id: 1,
+    question: "How long does it take to see results from SEO?",
+    answer: "SEO is a long-term strategy. While some improvements can be seen within weeks, noticeable traffic and ranking growth typically happen within 3–6 months.",
   },
   {
-    question: "How soon can I expect results?",
-    answer: "Digital marketing is a long-term game, but paid ads and SEO can show improvements within weeks.",
-  }
+    id: 2,
+    question: "What’s the minimum budget for Google or Facebook Ads?",
+    answer: "We can work with flexible budgets, but we recommend starting with at least $300–$500/month to gather meaningful data and see measurable results.",
+  },
+  {
+    id: 4,
+    question: "Do you create content for social media?",
+    answer: "Yes! We handle everything—from content strategy to creating and posting high-quality, engaging content tailored to your audience and brand.",
+  },
+  {
+    id: 5,
+    question: "Will my website be mobile-friendly?",
+    answer: "Absolutely. All websites we build are responsive, fast-loading, and optimized for both desktop and mobile devices.",
+  },
+  {
+    id: 6,
+    question: "Can I update the website myself after it’s built?",
+    answer: "Yes. We build user-friendly websites and provide training or documentation so you can make basic updates on your own.",
+  },
+  {
+    id: 7,
+    question: "How do I get started?",
+    answer: "Simple! Just reach out to us for a free consultation. We’ll discuss your goals and recommend the best digital strategy to move your business forward.",
+  },
 ];
