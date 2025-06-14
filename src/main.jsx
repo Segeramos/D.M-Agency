@@ -13,7 +13,6 @@ import PPCAdvertisingPage from './pages/PPCAdvertisingPage.jsx';
 import WebDesignDevelopmentPage from './pages/WebDesignDevelopmentPage.jsx';
 import SocialMediaManagementPage from './pages/SocialMediaManagementPage.jsx';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
