@@ -15,6 +15,7 @@ const Home = () => {
         alt='hero image'
         content="Grow Your Business Online Smarter and Faster"
         subContent="Get more traffic, more leads, and more sales with our all-in-one digital marketing solutions. From SEO to ads, social media, and web design, we’ve got you covered."
+        path='/grow-business'
       />
 
       <main>

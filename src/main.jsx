@@ -12,6 +12,7 @@ import OptimizationPage from './pages/OptimizationPage.jsx';
 import PPCAdvertisingPage from './pages/PPCAdvertisingPage.jsx';
 import WebDesignDevelopmentPage from './pages/WebDesignDevelopmentPage.jsx';
 import SocialMediaManagementPage from './pages/SocialMediaManagementPage.jsx';
+import GrowBusiness from './pages/GrowBusiness.jsx';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/web-design-development-page",
         element: <WebDesignDevelopmentPage />
+      },
+      {
+        path: "/grow-business",
+        element: <GrowBusiness />
       },
       
     ]

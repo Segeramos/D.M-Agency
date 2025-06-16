@@ -67,55 +67,87 @@ const PPCAdvertisingPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-4 bg-yellow-50">
-        <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
-          Our PPC Advertising Packages
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-            <thead className="bg-orange-600 text-white">
-              <tr>
-                {["Package", "Monthly Fee", "Includes"].map((head) => (
-                  <th key={head} className="py-4 px-6 text-left">{head}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  pkg: "Starter PPC Plan",
-                  fee: "KES 20,000 + Ad Spend",
-                  includes: "Google Search Ads, Basic Setup, Monthly Report"
-                },
-                {
-                  pkg: "Growth PPC Plan",
-                  fee: "KES 35,000 + Ad Spend",
-                  includes: "Google + Facebook Ads, A/B Testing, Landing Page Insights"
-                },
-                {
-                  pkg: "Pro PPC Plan",
-                  fee: "KES 60,000 + Ad Spend",
-                  includes: "Full Funnel PPC, Custom Creatives, Weekly Reports"
-                },
-                {
-                  pkg: "Custom Enterprise Plan",
-                  fee: "Quote-based",
-                  includes: "Tailored for high-budget or international campaigns"
-                }
-              ].map((row) => (
-                <tr key={row.pkg} className="border-b last:border-none">
-                  <td className="py-4 px-6 font-medium">{row.pkg}</td>
-                  <td className="py-4 px-6">{row.fee}</td>
-                  <td className="py-4 px-6">{row.includes}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+
+      
+    <section className="py-20 px-6 bg-orange-150">
+  <h2 className="text-3xl font-bold text-orange-600 mb-12 text-center">
+    Our PPC Advertising Packages
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+    {[
+      {
+        pkg: "Starter PPC Plan",
+        subtitle: "For lean startups",
+        price: "KES 20,000 + Ad Spend",
+        features: [
+          "Google Search Ads",
+          "Basic Setup",
+          "Monthly Report"
+        ]
+      },
+      {
+        pkg: "Growth PPC Plan",
+        subtitle: "For growing businesses",
+        price: "KES 35,000 + Ad Spend",
+        features: [
+          "Google + Facebook Ads",
+          "A/B Testing",
+          "Landing Page Insights"
+        ]
+      },
+      {
+        pkg: "Pro PPC Plan",
+        subtitle: "For performance-driven teams",
+        price: "KES 60,000 + Ad Spend",
+        features: [
+          "Full Funnel PPC",
+          "Custom Creatives",
+          "Weekly Reports"
+        ]
+      },
+      {
+        pkg: "Custom Enterprise Plan",
+        subtitle: "For high-budget campaigns",
+        price: "Quote-based",
+        features: [
+          "Tailored Strategy",
+          "Multi-Platform Ads",
+          "International Campaigns"
+        ]
+      }
+    ].map((plan, index) => {
+      const isDark = index === 1;
+      return (
+        <div
+          key={plan.pkg}
+          className={`w-72 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 ${
+            isDark
+              ? "bg-orange-600 text-white"
+              : "bg-white text-black"
+          }`}
+        >
+          <h3 className="text-xl font-bold mb-1">{plan.pkg}</h3>
+          <p className="text-sm mb-4 opacity-70">{plan.subtitle}</p>
+          <p className="text-3xl font-bold mb-6">{plan.price}</p>
+          <ul className="mb-6 space-y-2">
+            {plan.features.map((feature) => (
+              <li key={feature} className="flex items-center space-x-2">
+                <span className="text-green-500 text-xl">✔️</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+          
         </div>
-        <p className="mt-4 text-center font-semibold">
-          All plans include weekly reporting, ongoing optimization, and expert support.
-        </p>
-      </section>
+      );
+    })}
+  </div>
+  <p className="mt-12 text-center text-black font-medium">
+    All plans include weekly reporting, ongoing optimization, and expert support.
+  </p>
+</section>
+
+
 
       {/* Why Choose Us */}
       <section className="py-16 px-4 bg-orange-50">

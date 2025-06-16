@@ -67,55 +67,85 @@ const WebDesignDevelopmentPage = () => {
       </section>
 
       {/* Pricing Table */}
-      <section className="py-16 px-4 bg-yellow-50">
-        <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
-          Web Design & Development Packages
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-            <thead className="bg-orange-600 text-white">
-              <tr>
-                {["Plan", "Cost", "Details"].map((head) => (
-                  <th key={head} className="py-4 px-6 text-left">{head}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  plan: "Starter Website",
-                  cost: "KES 25,000",
-                  details: "Up to 5 pages, responsive design, contact form, basic SEO"
-                },
-                {
-                  plan: "Growth Website",
-                  cost: "KES 50,000",
-                  details: "10+ pages, blog integration, performance optimization, animations"
-                },
-                {
-                  plan: "eCommerce Website",
-                  cost: "KES 85,000",
-                  details: "Shopify/WooCommerce setup, payment integration, training"
-                },
-                {
-                  plan: "Custom Project",
-                  cost: "Quote-based",
-                  details: "Enterprise systems, SaaS platforms, APIs, portals"
-                }
-              ].map((row) => (
-                <tr key={row.plan} className="border-b last:border-none">
-                  <td className="py-4 px-6 font-medium">{row.plan}</td>
-                  <td className="py-4 px-6">{row.cost}</td>
-                  <td className="py-4 px-6">{row.details}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <section className="py-20 px-6 bg-yellow-50">
+  <h2 className="text-3xl font-bold text-orange-600 mb-12 text-center">
+    Web Design & Development Packages
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+    {[
+      {
+        plan: "Starter Website",
+        subtitle: "Perfect for simple business sites",
+        cost: "KES 25,000",
+        features: [
+          "Up to 5 pages",
+          "Responsive Design",
+          "Contact Form",
+          "Basic SEO"
+        ]
+      },
+      {
+        plan: "Growth Website",
+        subtitle: "Ideal for content-heavy projects",
+        cost: "KES 50,000",
+        features: [
+          "10+ Pages",
+          "Blog Integration",
+          "Performance Optimization",
+          "Animations"
+        ]
+      },
+      {
+        plan: "eCommerce Website",
+        subtitle: "Launch your online store",
+        cost: "KES 85,000",
+        features: [
+          "Shopify/WooCommerce Setup",
+          "Payment Integration",
+          "Training Included"
+        ]
+      },
+      {
+        plan: "Custom Project",
+        subtitle: "Built to your specification",
+        cost: "Quote-based",
+        features: [
+          "Enterprise Systems",
+          "SaaS Platforms",
+          "APIs & Custom Portals"
+        ]
+      }
+    ].map((pkg, index) => {
+      const isDark = index === 1;
+      return (
+        <div
+          key={pkg.plan}
+          className={`w-72 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 ${
+            isDark
+              ? "bg-orange-600 text-white"
+              : "bg-white text-black"
+          }`}
+        >
+          <h3 className="text-xl font-bold mb-1">{pkg.plan}</h3>
+          <p className="text-sm mb-4 opacity-70">{pkg.subtitle}</p>
+          <p className="text-3xl font-bold mb-6">{pkg.cost}</p>
+          <ul className="mb-6 space-y-2">
+            {pkg.features.map((feature) => (
+              <li key={feature} className="flex items-center space-x-2">
+                <span className="text-green-500 text-xl">✔️</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+          
         </div>
-        <p className="mt-4 text-center font-semibold">
-          Every package includes launch support, Google indexing, and speed optimization.
-        </p>
-      </section>
+      );
+    })}
+  </div>
+  <p className="mt-12 text-center text-black font-medium">
+    Every package includes launch support, Google indexing, and speed optimization.
+  </p>
+</section>
 
       {/* Website Projects */}
       <section className="py-16 px-4">

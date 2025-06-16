@@ -67,39 +67,89 @@ const OptimizationPage = () => {
       </section>
 
       {/* Pricing */}
-      <section className="py-16 px-4 bg-yellow-50">
-        <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
-          Our SEO Optimization Packages & Charges
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-            <thead className="bg-orange-600 text-white">
-              <tr>
-                {["Package", "Price (Monthly)", "Features"].map((head) => (
-                  <th key={head} className="py-4 px-6 text-left">{head}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { pkg: "Starter SEO Plan", price: "KES 15,000", feat: "SEO Audit, Basic On-page, Keyword Setup, Monthly Report" },
-                { pkg: "Growth SEO Plan", price: "KES 30,000", feat: "Includes Starter + Link Building, Technical SEO, Blog Optimization" },
-                { pkg: "Pro SEO Plan", price: "KES 50,000", feat: "Full Service + Competitor Tracking, Content Strategy, Local SEO" },
-                { pkg: "Custom Plan", price: "Quote-based", feat: "Tailored for enterprise websites, eCommerce, or large-scale SEO" },
-              ].map((row) => (
-                <tr key={row.pkg} className="border-b last:border-none">
-                  <td className="py-4 px-6 font-medium">{row.pkg}</td>
-                  <td className="py-4 px-6">{row.price}</td>
-                  <td className="py-4 px-6">{row.feat}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <section className="py-20 px-6 bg-yellow-50">
+  <h2 className="text-3xl font-bold text-orange-600 mb-12 text-center">
+    Our SEO Optimization Packages & Charges
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+    {[
+      {
+        pkg: "Starter SEO Plan",
+        subtitle: "For early stage websites",
+        price: "KES 15,000",
+        features: [
+          "SEO Audit",
+          "Basic On-page Optimization",
+          "Keyword Setup",
+          "Monthly Report"
+        ]
+      },
+      {
+        pkg: "Growth SEO Plan",
+        subtitle: "For growing brands",
+        price: "KES 30,000",
+        features: [
+          "Everything in Starter",
+          "Link Building",
+          "Technical SEO",
+          "Blog Optimization"
+        ]
+      },
+      {
+        pkg: "Pro SEO Plan",
+        subtitle: "For competitive industries",
+        price: "KES 50,000",
+        features: [
+          "All Growth features",
+          "Competitor Tracking",
+          "Content Strategy",
+          "Local SEO"
+        ]
+      },
+      {
+        pkg: "Custom Plan",
+        subtitle: "For large or custom projects",
+        price: "Quote-based",
+        features: [
+          "Tailored SEO Approach",
+          "eCommerce SEO",
+          "Enterprise Auditing",
+          "Advanced Analytics"
+        ]
+      }
+    ].map((plan, index) => {
+      const isDark = index === 1;
+      return (
+        <div
+          key={plan.pkg}
+          className={`w-72 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 ${
+            isDark
+              ? "bg-orange-600 text-white"
+              : "bg-white text-black"
+          }`}
+        >
+          <h3 className="text-xl font-bold mb-1">{plan.pkg}</h3>
+          <p className="text-sm mb-4 opacity-70">{plan.subtitle}</p>
+          <p className="text-3xl font-bold mb-6">{plan.price}</p>
+          <ul className="mb-6 space-y-2">
+            {plan.features.map((feature) => (
+              <li key={feature} className="flex items-center space-x-2">
+                <span className="text-green-500 text-xl">✔️</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+      
         </div>
-        <p className="mt-4 text-center font-semibold">
-          All packages come with monthly reporting and expert support.
-        </p>
-      </section>
+      );
+    })}
+  </div>
+  <p className="mt-12 text-center text-black font-medium">
+    All packages come with monthly reporting and expert support.
+  </p>
+</section>
+
+
 
       {/* Case Studies with images */}
       <section className="py-16 px-4">

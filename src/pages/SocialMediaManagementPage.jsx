@@ -66,55 +66,95 @@ const SocialMediaManagementPage = () => {
       </section>
 
       {/* Pricing Table */}
-      <section className="py-16 px-4 bg-yellow-50">
-        <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
-          Social Media Management Plans
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-            <thead className="bg-orange-600 text-white">
-              <tr>
-                {["Plan", "Monthly Fee", "Includes"].map((head) => (
-                  <th key={head} className="py-4 px-6 text-left">{head}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  plan: "Starter Social Plan",
-                  fee: "KES 18,000",
-                  includes: "2 platforms, 3 posts/week, basic visuals, monthly reporting"
-                },
-                {
-                  plan: "Growth Social Plan",
-                  fee: "KES 35,000",
-                  includes: "Up to 4 platforms, 5 posts/week, custom graphics, engagement support"
-                },
-                {
-                  plan: "Pro Social Plan",
-                  fee: "KES 60,000",
-                  includes: "Full strategy, daily posts, stories, reels, analytics & response handling"
-                },
-                {
-                  plan: "Custom Plan",
-                  fee: "Quote-based",
-                  includes: "Ideal for brands with large-scale or multi-region social strategies"
-                }
-              ].map((row) => (
-                <tr key={row.plan} className="border-b last:border-none">
-                  <td className="py-4 px-6 font-medium">{row.plan}</td>
-                  <td className="py-4 px-6">{row.fee}</td>
-                  <td className="py-4 px-6">{row.includes}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+     <section className="py-20 px-6 bg-yellow-50">
+  <h2 className="text-3xl font-bold text-orange-600 mb-12 text-center">
+    Social Media Management Plans
+  </h2>
+  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+    {[
+      {
+        plan: "Starter Social Plan",
+        subtitle: "For small pages or startups",
+        fee: "KES 18,000",
+        features: [
+          "2 platforms",
+          "3 posts/week",
+          "Basic visuals",
+          "Monthly reporting"
+        ]
+      },
+      {
+        plan: "Growth Social Plan",
+        subtitle: "For brands looking to scale",
+        fee: "KES 35,000",
+        features: [
+          "Up to 4 platforms",
+          "5 posts/week",
+          "Custom graphics",
+          "Engagement support"
+        ]
+      },
+      {
+        plan: "Pro Social Plan",
+        subtitle: "Full-scale social management",
+        fee: "KES 60,000",
+        features: [
+          "Full strategy",
+          "Daily posts + Stories + Reels",
+          "Analytics reports",
+          "Response handling"
+        ]
+      },
+      {
+        plan: "Custom Plan",
+        subtitle: "Tailored for enterprise brands",
+        fee: "Quote-based",
+        features: [
+          "Multi-region strategy",
+          "Creative campaigns",
+          "Dedicated manager",
+          "Comprehensive insights"
+        ]
+      }
+    ].map((pkg, index) => {
+      const isDark = index === 1;
+      return (
+        <div
+          key={pkg.plan}
+          className={`w-72 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 ${
+            isDark
+              ? "bg-orange-600 text-white"
+              : "bg-white text-black"
+          }`}
+        >
+          <h3 className="text-xl font-bold mb-1">{pkg.plan}</h3>
+          <p className="text-sm mb-4 opacity-70">{pkg.subtitle}</p>
+          <p className="text-3xl font-bold mb-6">{pkg.fee}</p>
+          <ul className="mb-6 space-y-2">
+            {pkg.features.map((feature) => (
+              <li key={feature} className="flex items-center space-x-2">
+                <span className="text-green-500 text-xl">✔️</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+          {/* <button
+            className={`w-full py-2 rounded-full font-semibold transition ${
+              isDark
+                ? "bg-white text-orange-600 hover:bg-orange-100"
+                : "bg-orange-600 text-white hover:bg-orange-700"
+            }`}
+          >
+            Subscribe now
+          </button> */}
         </div>
-        <p className="mt-4 text-center font-semibold">
-          All plans include content planning, design, scheduling, and basic reporting.
-        </p>
-      </section>
+      );
+    })}
+  </div>
+  <p className="mt-12 text-center text-black font-medium">
+    All plans include content planning, design, scheduling, and basic reporting.
+  </p>
+</section>
 
       {/* Social Media Projects Showcase */}
       <section className="py-16 px-4">
