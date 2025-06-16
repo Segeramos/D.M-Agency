@@ -13,7 +13,8 @@ const Home = () => {
       <Banner 
         image={heroImg}
         alt='hero image'
-        content="welcome to hero "
+        content="Grow Your Business Online Smarter and Faster"
+        subContent="Get more traffic, more leads, and more sales with our all-in-one digital marketing solutions. From SEO to ads, social media, and web design, we’ve got you covered."
       />
 
       <main>
