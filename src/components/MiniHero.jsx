@@ -45,7 +45,7 @@ const MiniHero = () => {
                                     <h2 className="font-semibold text-l">
                                         {service.title}
                                     </h2>
-                                    <p className="text-sm text-gray-200">
+                                    <p className="text-xs text-gray-200">
                                         {service.desc}
                                     </p>
                                 </div>

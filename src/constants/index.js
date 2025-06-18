@@ -29,6 +29,18 @@ export const servicesContent = [
     title: "Website Design & Development",
     desc: "Launch a high-performing, custom website that drives real business growth.",
     path: "/web-design-development-page"
+  },
+  {
+    icon: code,
+    title: "Graphic Design",
+    desc: "Launch a high-performing, custom website that drives real business growth.",
+    path: "/graphic-design"
+  },
+  {
+    icon: code,
+    title: "Whatsapp Business Integration",
+    desc: "Launch a high-performing, custom website that drives real business growth.",
+    path: "/whatsapp-business-integration"
   }
 ];
 

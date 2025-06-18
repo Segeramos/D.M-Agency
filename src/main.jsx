@@ -13,6 +13,9 @@ import PPCAdvertisingPage from './pages/PPCAdvertisingPage.jsx';
 import WebDesignDevelopmentPage from './pages/WebDesignDevelopmentPage.jsx';
 import SocialMediaManagementPage from './pages/SocialMediaManagementPage.jsx';
 import GrowBusiness from './pages/GrowBusiness.jsx';
+import GraphicDesign from './pages/GraphicDesign.jsx';
+import WhatsappBusinessIntegration from './pages/WhatsappBusinessIntegration.jsx';
+import Error from './pages/Error.jsx';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +62,18 @@ const router = createBrowserRouter([
         path: "/grow-business",
         element: <GrowBusiness />
       },
+      {
+        path: "/graphic-design",
+        element: <GraphicDesign />
+      },
+      {
+        path: "/whats-app",
+        element: <WhatsappBusinessIntegration />
+      },
+      {
+        path: "*",
+        element: <Error />
+      }
       
     ]
   }
