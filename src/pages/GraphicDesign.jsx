@@ -1,9 +1,9 @@
 import React from 'react'
 
-const WhatsappBusinessIntegration = () => {
+function GraphicDesign() {
   return (
-    <div>WhatsappBusinessIntegration</div>
+    <div>GraphicDesign</div>
   )
 }
 
-export default WhatsappBusinessIntegration
+export default GraphicDesign

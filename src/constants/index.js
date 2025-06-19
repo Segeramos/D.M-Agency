@@ -40,7 +40,7 @@ export const servicesContent = [
     icon: code,
     title: "Whatsapp Business Integration",
     desc: "Launch a high-performing, custom website that drives real business growth.",
-    path: "/whatsapp-business-integration"
+    path: "/whats-app"
   }
 ];
 

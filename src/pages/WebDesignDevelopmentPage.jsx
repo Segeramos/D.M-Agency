@@ -1,4 +1,5 @@
 import React from 'react';
+import jrl from '../assets/images/Jrl.jpg'
 
 const WebDesignDevelopmentPage = () => {
   return (
@@ -173,10 +174,10 @@ const WebDesignDevelopmentPage = () => {
               link: "https://rondamotech.com"
             },
             {
-              name: "Safari Auto Spares",
-              img: "/images/web-safari.jpg",
+              name: "Junk Removal LLC Services",
+              img: jrl,
               desc: "Service-based site with booking system and WhatsApp CTA.",
-              link: "https://safariautospares.com"
+              link: "https://junkremovalllc.com/"
             },
           ].map((site) => (
             <a
