@@ -11,7 +11,7 @@ import { SiTiktok } from 'react-icons/si';
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-700 text-gray-300 py-12 px-4 pt-25">
+    <footer className="bg-black text-gray-300 py-25 px-4">
       <div className="max-w-6xl mx-auto text-center space-y-8">
 
         {/* Top Nav */}
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         {/* Divider + Copyright */}
-        <div className="border-t border-white-700 pt-6 text-xs text-white-500">
+        <div className="border-t border-neutral-700 pt-6 text-xs text-white-500">
           © {new Date().getFullYear()} bookie. All rights reserved.
         </div>
       </div>
