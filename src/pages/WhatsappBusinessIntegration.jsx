@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const WhatsappBusinessIntegration = () => {
   return (
     <div>WhatsappBusinessIntegration</div>
@@ -7,3 +8,5 @@ const WhatsappBusinessIntegration = () => {
 }
 
 export default WhatsappBusinessIntegration
+
+
