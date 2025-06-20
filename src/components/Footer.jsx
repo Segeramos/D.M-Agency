@@ -11,7 +11,7 @@ import { SiTiktok } from 'react-icons/si';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-12 px-4">
+    <footer className="bg-black text-gray-300 py-25 px-4">
       <div className="max-w-6xl mx-auto text-center space-y-8">
 
         {/* Top Nav */}
