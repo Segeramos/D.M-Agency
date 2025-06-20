@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from './Button';
 
 const Banner = ({image, alt, content, subContent}) => {
   return (
@@ -16,10 +15,7 @@ const Banner = ({image, alt, content, subContent}) => {
             <p className="max-w-lg">
                 {subContent}
             </p>
-            <Button 
-                label="Learn More"
-                className="px-8 py-2 bg-orange-400 rounded-md cursor-pointer hover:bg-orange-500 delay-200"
-            />
+            
         </div>
       
     </section>
