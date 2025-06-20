@@ -33,13 +33,13 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center flex-wrap gap-6 text-lg text-white-400">
-          <a href="#" className="hover:text-white transition"><FaFacebookF /></a>
-          <a href="#" className="hover:text-white transition"><FaInstagram /></a>
-          <a href="#" className="hover:text-white transition"><FaXTwitter /></a>
-          <a href="#" className="hover:text-white transition"><FaYoutube /></a>
-          <a href="#" className="hover:text-white transition"><FaLinkedinIn /></a>
-          <a href="#" className="hover:text-white transition"><FaWhatsapp /></a>
-          <a href="#" className="hover:text-white transition"><SiTiktok /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaFacebookF /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaInstagram /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaXTwitter /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaYoutube /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaLinkedinIn /></a>
+          <a href="#" className="hover:text-orange-600 transition"><FaWhatsapp /></a>
+          <a href="#" className="hover:text-orange-600 transition"><SiTiktok /></a>
         </div>
 
         {/* Divider + Copyright */}
