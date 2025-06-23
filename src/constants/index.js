@@ -91,17 +91,3 @@ export const faqs = [
 ];
 
 
-export const stats = [
-  { value: '200+', label: 'Brands Scaled', icon: FaChartLine },
-  { value: '98%', label: 'Client Retention', icon: FaHandshake },
-  { value: '350+', label: 'Campaigns Managed', icon: FaBullseye },
-  { value: '25k+', label: 'Leads Generated', icon: FaUsers },
-];
-
-
-
-export const team = [
-  { name: 'Alice Kimani', role: 'Founder & Lead Strategist', img: '/team/alice.jpg' },
-  { name: 'Brian Otieno', role: 'PPC Expert', img: '/team/brian.jpg' },
-  { name: 'Diana Njeri', role: 'Social Media Manager', img: '/team/diana.jpg' },
-];

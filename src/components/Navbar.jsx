@@ -42,8 +42,8 @@ const Navbar = () => {
     <nav className="w-full h-16 border-b border-neutral-800 sticky top-0 left-0 right-0 z-40 backdrop-blur-sm">
 
       <div className="w-[90%] mx-auto flex justify-between h-full items-center ">
-        <Link to="/">
-          Logo
+        <Link to="/" className='text-orange-600 text-2xl font-semibold'>
+          Bookie
         </Link>
 
         <div className="flex items-center gap-8">
