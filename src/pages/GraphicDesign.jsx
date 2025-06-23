@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactActions from '../components/ContactActions';
 
 const GraphicDesign = () => {
   return (
@@ -170,17 +171,7 @@ const GraphicDesign = () => {
         <p className="mb-8">
           Talk to our designers for a free consultation and brand audit.
         </p>
-        <div className="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:gap-4">
-          <a href="tel:+254XXX" className="block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📞 Call Us: +254 XXX XXX XXX
-          </a>
-          <a href="mailto:hello@youragency.com" className="block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📧 Email Us
-          </a>
-          <a href="#book" className="block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg">
-            📅 Book a Free Design Session
-          </a>
-        </div>
+        < ContactActions />
       </section>
 
     </div>

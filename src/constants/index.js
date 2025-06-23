@@ -82,3 +82,5 @@ export const faqs = [
     answer: "Simple! Just reach out to us for a free consultation. We’ll discuss your goals and recommend the best digital strategy to move your business forward.",
   },
 ];
+
+

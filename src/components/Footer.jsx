@@ -33,13 +33,13 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center flex-wrap gap-6 text-lg text-white-400">
-          <a href="#" className="hover:text-orange-600 transition"><FaFacebookF /></a>
-          <a href="#" className="hover:text-orange-600 transition"><FaInstagram /></a>
-          <a href="#" className="hover:text-orange-600 transition"><FaXTwitter /></a>
-          <a href="#" className="hover:text-orange-600 transition"><FaYoutube /></a>
-          <a href="#" className="hover:text-orange-600 transition"><FaLinkedinIn /></a>
-          <a href="#" className="hover:text-orange-600 transition"><FaWhatsapp /></a>
-          <a href="#" className="hover:text-orange-600 transition"><SiTiktok /></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaFacebookF /></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaInstagram /></a>
+          <a href="https://x.com/bookie_DM?t=DWOme_6DSoI75b_vCHQGbw&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaXTwitter /></a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaYoutube /></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaLinkedinIn /></a>
+          <a href="https://wa.me/254756627342" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><FaWhatsapp /></a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition"><SiTiktok /></a>
         </div>
 
         {/* Divider + Copyright */}

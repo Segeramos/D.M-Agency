@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import bannerImage from '../assets/images/about.jpg';
 
-// Optional team data & values – move to a constants file if you prefer
+
 const teamMembers = [
   { name: "Segera Amos", title: "Director of Operations", img: "/images/team/anna.jpg" },
   { name: "Sarah Rodriguez", title: "Director of Digital Marketing", img: "/images/team/sarah.jpg" },

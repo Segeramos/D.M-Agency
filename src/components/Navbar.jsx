@@ -83,8 +83,8 @@ const Navbar = () => {
       {/* mobile menu */}
       {
         nav && (
-          <div className="w-[90%] h-screen mx-auto flex flex-col justify-center items-center backdrop-blur-2xl md:hidden">
-            <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center">
+          <div className="w-[100%] h-screen mx-auto flex flex-col justify-center items-center backdrop-blur-2xl md:hidden mt-5 bg-black">
+            <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center ">
               {
                 navLinks.map((link, index) => (
                   <li key={index} className="hover:text-[#f97316] text-sm ">

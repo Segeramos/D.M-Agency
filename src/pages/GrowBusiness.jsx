@@ -1,20 +1,7 @@
-// import React from 'react';
-
-// const GrowBusiness = () => {
-//   return (
-//     <div>
-      
-
-
-
-//     </div>
-//   );
-// };
-
-// export default GrowBusiness;
-
-
 import React from 'react';
+import SSM from '../assets/images/SSM.webp';  
+
+
 
 const GrowBusiness = () => {
   return (
@@ -24,7 +11,7 @@ const GrowBusiness = () => {
 
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <img
-            src="https://www.sendmode.com/wp-content/uploads/2018/01/digital-marketing.png"
+            src="https://api.nounq.com/admin/images/blog/why-digital-marketing-is-important-for-business.jpg"
             alt="Digital marketing team"
             className="rounded-xl md:w-1/2"
           />
@@ -38,7 +25,7 @@ const GrowBusiness = () => {
             <h2 className="text-2xl font-semibold mb-4">Search Engine Optimization (SEO)</h2>
             <p>
               SEO helps you rank higher on search engines, attracting organic traffic that converts. Tools we use: <a href="https://ahrefs.com" target="_blank" className="text-orange-400 underline">Ahrefs</a>, <a href="https://semrush.com" target="_blank" className="text-orange-400 underline">SEMRush</a>, <a href="https://analytics.google.com" target="_blank" className="text-orange-400 underline">Google Analytics</a>.
-              Learn more at <a href="https://moz.com/beginners-guide-to-seo" target="_blank" className="text-orange-400 underline">Moz Guide</a>.
+              Learn more at <a href="https://moz.com/beginners-guide-to-seo" target="_blank" className="text-orange-400 underline">Moz Guide</a>, <a href="https://audiologydesign.com/the-hearing-professionals-guide-to-common-search-engine-optimization-seo-terms/" target="_blank" className="text-orange-400 underline">Audiologydesign</a>..
             </p>
           </div>
           <img
@@ -98,7 +85,10 @@ const GrowBusiness = () => {
             className="rounded-xl w-full max-w-2xl mx-auto"
           />
           <p>
-            From doubling revenue to improving brand engagement, our work has transformed businesses. See what our clients say on <a href="https://www.clutch.co/agencies/digital-marketing" target="_blank" className="text-orange-400 underline">Clutch</a> or browse our <a href="/case-studies" className="text-orange-400 underline">Case Studies</a>.
+            From doubling revenue to improving brand engagement, our work has transformed businesses. See what our clients say on 
+            <a href="https://www.clutch.co/agencies/digital-marketing" target="_blank" className="text-orange-400 underline">Clutch</a> or browse our 
+            <a href="/case-studies" className="text-orange-400 underline">Case Studies</a>, 
+            
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContactActions from '../components/ContactActions';
 const OptimizationPage = () => {
   return (
      <div className="min-h-screen bg-gradient-to-b from-orange-100 to-yellow-50 text-gray-900">
@@ -247,23 +247,14 @@ const OptimizationPage = () => {
 
       {/* CTA */}
       <section id="contact" className="py-16 px-4 text-center">
+        
         <h2 className="text-3xl font-bold text-orange-700 mb-4">
           Let’s Get Your Website Ranking Higher Today
         </h2>
         <p className="mb-8">
           Start dominating Google search and generating organic traffic that converts.
         </p>
-        <div className="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:gap-4">
-          <a href="tel:+254XXX" className="block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📞 Call Us: +254 XXX XXX XXX
-          </a>
-          <a href="mailto:hello@youragency.com" className="block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📧 Email Us
-          </a>
-          <a href="#book" className="block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg">
-            📅 Book a Free Strategy Session
-          </a>
-        </div>
+       < ContactActions />
       </section>
     </div>
   );

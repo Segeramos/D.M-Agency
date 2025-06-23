@@ -1,6 +1,6 @@
 import React from 'react';
 import jrl from '../assets/images/Jrl.jpg'
-
+import ContactActions from '../components/ContactActions';
 const WebDesignDevelopmentPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-100 to-yellow-50 text-gray-900">
@@ -227,17 +227,7 @@ const WebDesignDevelopmentPage = () => {
         <p className="mb-8">
           Let’s turn your website into your strongest sales tool. Book a free consultation today.
         </p>
-        <div className="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:gap-4">
-          <a href="tel:+254XXX" className="block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📞 Call Us: +254 XXX XXX XXX
-          </a>
-          <a href="mailto:hello@youragency.com" className="block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 px-6 rounded-lg">
-            📧 Email Us
-          </a>
-          <a href="#book" className="block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg">
-            📅 Book a Free Strategy Session
-          </a>
-        </div>
+        < ContactActions />
       </section>
 
     </div>
