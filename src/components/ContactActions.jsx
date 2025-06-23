@@ -15,7 +15,7 @@ const ContactActions = () => {
 
       {/* Email Us Button */}
       <a
-        href="segeramos87@gmail.com"
+        href="mailto:segeramos87@example.com"
         className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-xl flex items-center gap-2 transition"
       >
         📧 <span>Email Us</span>
