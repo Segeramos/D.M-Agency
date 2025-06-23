@@ -83,7 +83,7 @@ const Navbar = () => {
       {/* mobile menu */}
       {
         nav && (
-          <div className="w-[90%] h-screen mx-auto flex flex-col justify-center items-center backdrop-blur-2xl md:hidden">
+          <div className="w-full mt-8 h-screen mx-auto flex flex-col items-center backdrop-blur-2xl md:hidden">
             <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center">
               {
                 navLinks.map((link, index) => (
