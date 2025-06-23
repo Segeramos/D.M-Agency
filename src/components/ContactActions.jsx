@@ -10,12 +10,12 @@ const ContactActions = () => {
         href="tel:+254712345678"
         className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl flex items-center gap-2 transition"
       >
-        📞 <span>Call Us: +254 756627342</span>
+        📞 <span>Call Us: +254 756 627 342</span>
       </a>
 
       {/* Email Us Button */}
       <a
-        href="mailto:youremail@example.com"
+        href="segeramos87@gmail.com"
         className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-xl flex items-center gap-2 transition"
       >
         📧 <span>Email Us</span>
