@@ -106,7 +106,7 @@ const Articles = () => {
             href={article.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-orange-50 rounded-2xl shadow-md hover:bg-orange-100 hover:shadow-xl transition duration-300 ease-in-out border border-gray-100"
+            className="block bg-orange-50 rounded-2xl shadow-md hover:bg-orange-100 hover:shadow-amber-400 transition duration-300 ease-in-out border border-gray-100"
           >
             <img
               src={article.image}
