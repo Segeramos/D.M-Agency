@@ -1,5 +1,6 @@
 import React from 'react';
 import SSM from '../assets/images/SSM.webp';  
+import Articles from '../components/Articles';
 
 
 
@@ -99,7 +100,11 @@ const GrowBusiness = () => {
           </p>
         </div>
       </div>
+      <div>
+        < Articles />
+      </div>
     </section>
+    
   );
 };
 
