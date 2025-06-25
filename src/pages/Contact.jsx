@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+import Toast from '../components/Toast';
 
 const Contact = () => {
+  const form = useRef();
+  const [toast, setToast] = useState({ message: '', type: '', show: false });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then(
+      (result) => {
+        console.log(result.text);
+        setToast({ message: 'Message sent successfully!', type: 'success', show: true });
+        setTimeout(() => setToast({ ...toast, show: false }), 3000);
+      },
+      (error) => {
+        console.log(error.text);
+        setToast({ message: 'Failed to send message. Please try again.', type: 'error', show: true });
+        setTimeout(() => setToast({ ...toast, show: false }), 3000);
+      }
+    );
+
+    e.target.reset();
+  };
+
   return (
-    <div className="min-h-screen bg-black py-16 px-4 sm:px-8 text-white">
+    <div className="min-h-screen bg-black py-16 px-4 sm:px-8 text-white relative">
+      {toast.show && <Toast message={toast.message} type={toast.type} />}
+
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        
         {/* Left: Contact Info */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
@@ -31,35 +61,35 @@ const Contact = () => {
           </ul>
         </div>
 
-        {/* Right: Form */}
-        <form className="space-y-6">
+        {/* Right: EmailJS Form */}
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium">First</label>
-              <input type="text" placeholder="First" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 text-black" />
+              <input name="first_name" type="text" placeholder="First" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
             </div>
             <div>
               <label className="block text-sm font-medium">Last</label>
-              <input type="text" placeholder="Last" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 text-black" />
+              <input name="last_name" type="text" placeholder="Last" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
             </div>
           </div>
 
           <div>
             <label className="block text-sm font-medium">Email</label>
-            <input type="email" placeholder="example@email.com" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 text-black" />
+            <input name="email" type="email" placeholder="example@email.com" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
           </div>
 
           <div>
             <label className="block text-sm font-medium">Phone (optional)</label>
-            <input type="text" placeholder="xxx-xxx-xxxx" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 text-black" />
+            <input name="phone" type="text" placeholder="xxx-xxx-xxxx" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
           </div>
 
           <div>
             <label className="block text-sm font-medium">Message</label>
-            <textarea rows="5" placeholder="Type your message ..." className="w-full border border-gray-300 rounded px-3 py-2 mt-1 text-black"></textarea>
+            <textarea name="message" rows="5" placeholder="Type your message ..." required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"></textarea>
           </div>
 
-          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-8 rounded-full transition">
+          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-8 rounded-full transition cursor-pointer">
             Submit
           </button>
         </form>
@@ -67,7 +97,7 @@ const Contact = () => {
 
       {/* Additional Section */}
       <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-12">
-        
+
         {/* Office Hours */}
         <div>
           <h3 className="text-xl font-semibold mb-2">🕒 Office Hours</h3>
@@ -86,7 +116,7 @@ const Contact = () => {
             <input
               type="email"
               placeholder="you@email.com"
-              className="flex-1 px-4 py-2 rounded text-"
+              className="flex-1 px-4 py-2 rounded"
             />
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">
               Subscribe
