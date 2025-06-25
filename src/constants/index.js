@@ -1,7 +1,4 @@
-import chart from '../assets/icons/chart-no-axes-combined.svg';
-import circle from '../assets/icons/circle-fading-plus.svg';
-import code from '../assets/icons/code.svg';
-import megaphone from '../assets/icons/megaphone.svg'
+import seoImage from '../assets/images/SEO.png'
 
 import {
   FaChartLine,
@@ -12,43 +9,44 @@ import {
 
 
 
-export const servicesContent = [
-  {
-    icon: chart,
-    title: "Search Engine Optimization (SEO)",
-    desc: "Get found on Google and turn searches into sales with expert SEO strategies.",
-    path: '/optimization-page',
-  },
-  {
-    icon: megaphone,
-    title: "Paid Per Click Advertising",
-    desc: "Maximize ROI with laser-focused Google & Facebook ad campaigns",
-    path: "/pay-per-click-advertising-page"
-  },
-  {
-    icon: circle,
-    title: "Social Media Management",
-    desc: "Build a loyal following and boost engagement across top platforms",
-    path: "/social-media-management-page"
-  },
-  {
-    icon: code,
-    title: "Website Design & Development",
-    desc: "Launch a high-performing, custom website that drives real business growth.",
-    path: "/web-design-development-page"
-  },
-  {
-    icon: code,
-    title: "Graphic Design",
-    desc: "Launch a high-performing, custom website that drives real business growth.",
-    path: "/graphic-design"
-  },
-  {
-    icon: code,
-    title: "Whatsapp Business Integration",
-    desc: "Launch a high-performing, custom website that drives real business growth.",
-    path: "/whats-app"
-  }
+export const serviceItems = [
+ {
+  image: seoImage,
+  title: "Search Engine Optimization (SEO)",
+  desc: "Boost your visibility and get discovered by high-intent customers on Google. We craft expert SEO strategies that increase organic traffic, drive real conversions, and help your brand rank where it matters most. Let’s take your business to the top—starting now.",
+  path: '/optimization-page',
+},
+{
+  image: seoImage,
+  title: "Paid Per Click Advertising",
+  desc: "Target your ideal audience with precision. Our data-driven PPC campaigns on Google and Facebook help you gain visibility fast, attract quality leads, and maximize every advertising dollar. Ready to drive instant traffic and measurable ROI? Let’s launch today.",
+  path: "/pay-per-click-advertising-page"
+},
+{
+  image: seoImage,
+  title: "Social Media Management",
+  desc: "Build a loyal online community and drive engagement that matters. From content creation to scheduling and analytics, we manage your social media end-to-end. Let’s turn followers into customers and make your brand voice heard across every platform.",
+  path: "/social-media-management-page"
+},
+{
+  image: seoImage,
+  title: "Website Design & Development",
+  desc: "Turn first impressions into lasting connections with a high-performing custom website. We build responsive, user-centered sites that load fast, look stunning, and convert visitors into customers. Let’s bring your digital vision to life—starting today.",
+  path: "/web-design-development-page"
+},
+{
+  image: seoImage,
+  title: "Graphic Design",
+  desc: "Capture attention and communicate your brand with bold, memorable visuals. From logos to social graphics, our tailored design services help you stand out, stay consistent, and leave an impact. Let’s design something unforgettable for your business.",
+  path: "/graphic-design"
+},
+{
+  image: seoImage,
+  title: "WhatsApp Business Integration",
+  desc: "Connect with customers instantly using a smart WhatsApp Business setup. We integrate powerful automation, messaging tools, and support features into your workflow. Ready to simplify communication and improve customer experience? Let’s make it happen.",
+  path: "/whats-app"
+}
+
 ];
 
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
 import Banner from '../components/Banner';
-import MiniHero from '../components/MiniHero';
 import Accordion from '../components/Accordion';
 import Hero from '../components/Hero';
 
@@ -12,7 +11,6 @@ const Home = () => {
 
       <main>
         <Hero />
-        <MiniHero />
         <Accordion />
 
       </main>
