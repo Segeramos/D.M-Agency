@@ -81,7 +81,7 @@ const GrowBusiness = () => {
         <div className="text-center space-y-4">
           <h2 className="text-2xl font-semibold">Success Stories</h2>
           <img
-            src="https://images.unsplash.com/photo-1560472355-536de3962603"
+            src="https://dailyinspiredlife.com/wp-content/uploads/2022/03/inspirational-success-stories.jpg"
             alt="Team celebrating success"
             className="rounded-xl w-full max-w-2xl mx-auto"
           />
