@@ -1,5 +1,5 @@
 import seoImage from '../assets/images/SEO.png'
-import ppcImage from  '../assets/images/ppc.jpg'
+
 import ssmImage from  '../assets/images/ssm.png'
 import wbiImage from  '../assets/images/wbi.jpg'
 import yellowImage from  '../assets/images/yellow.jpg'
