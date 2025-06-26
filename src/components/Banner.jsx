@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = ({image, alt, content, subContent}) => {
   return (
-    <section className="w-full h-96 relative ">
+    <section className="w-full h-60 relative ">
         <img className="w-full h-full object-cover object-center"
             src={image} 
             alt={alt}

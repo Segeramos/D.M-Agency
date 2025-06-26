@@ -8,6 +8,8 @@ const OurWork = () => {
       <Banner
         image={work}
         alt="Our work"
+        content="Our ork"
+        subContent="........."
       />
     </section>
   )
