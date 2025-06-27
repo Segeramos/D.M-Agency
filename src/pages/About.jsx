@@ -5,7 +5,7 @@ import bannerImage from '../assets/images/about.jpg';
 
 const teamMembers = [
   { name: "Segera Amos", title: "Director of Operations", img: "/images/team/anna.jpg" },
-  { name: "Sarah Rodriguez", title: "Director of Digital Marketing", img: "/images/team/sarah.jpg" },
+  { name: "Joshua Kibwage", title: "Front-End Web Developer", img: "/images/team/sarah.jpg" },
   { name: "Larry Morroni", title: "Principal", img: "/images/team/larry.jpg" },
   { name: "Ryan Parker", title: "Developer & Designer", img: "/images/team/ryan-parker.jpg" },
   { name: "Chris Lee", title: "Web Developer", img: "/images/team/chris.jpg" },

@@ -45,7 +45,7 @@ const Contact = () => {
           <ul className="space-y-6 text-lg">
             <li className="flex items-center space-x-4">
               <FaPhone className="text-orange-500 text-xl" />
-              <span>+254 7XX XXX XXX</span>
+              <span>+254 703 687 830</span>
             </li>
             <li className="flex items-center space-x-4">
               <FaEnvelope className="text-orange-500 text-xl" />
