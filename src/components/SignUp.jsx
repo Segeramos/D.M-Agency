@@ -105,7 +105,7 @@ const SignUp = () => {
               placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border border-black rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-2 border border-black text-black rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
               aria-label="Email address"
             />
           </label>
@@ -117,27 +117,41 @@ const SignUp = () => {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 border border-black rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-2 border border-black text-black rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
               aria-label="Password"
             />
+            
             <button
+            
               type="button"
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-3 top-2 text-sm text-black focus:outline-none"
             >
+      
               {showPassword ? "Hide" : "Show"}
             </button>
           </label>
 
-          <button
-            onClick={handleSignUp}
-            disabled={loading}
-            className={`w-full bg-orange-600 text-white font-semibold py-2 rounded transition duration-200 ${
-              loading ? "opacity-50 cursor-not-allowed" : "hover:bg-orange-400"
-            }`}
-          >
-            {loading ? "Signing up..." : "Sign Up with Email"}
-          </button>
+         <button
+              onClick={handleSignUp}
+              disabled={loading}
+              className={`w-full flex items-center justify-center gap-2 bg-orange-600 text-white font-semibold py-2 rounded transition duration-200 ${
+                loading ? "opacity-50 cursor-not-allowed" : "hover:bg-orange-400"
+              }`}
+            >
+              {loading ? (
+                "Signing up..."
+              ) : (
+                <>
+                  <img
+                    src="src\assets\images\gmail.png"  // Replace with your image path or URL
+                    alt="Sign up icon"
+                    className="w-5 h-5"
+                  />
+                  <span>Sign Up with Email</span>
+                </>
+              )}
+         </button>
         </div>
       </div>
     </div>
