@@ -60,11 +60,13 @@ const Navbar = () => {
               ))
             }
           </ul>
-          <div className="hidden md:block">
+         <div className="hidden md:block">
+          <Link to="/signup">
             <Button 
               label="SignUp"
             />
-          </div>
+          </Link>
+        </div>
           <button
             onClick={toggleNav}
             className="block md:hidden border p-[0.8] text-[#f97316] cursor-pointer rounded-sm"
@@ -80,31 +82,41 @@ const Navbar = () => {
       {/* mobile menu */}
       {
         nav && (
-          <div className="w-full mt-8 h-screen mx-auto flex flex-col items-center backdrop-blur-2xl md:hidden">
+            <div
+            className="w-11/12 mt-8 max-h-[80vh] mx-auto flex flex-col items-center
+              bg-black/70 backdrop-blur-2xl md:hidden rounded-xl py-8
+              opacity-0 scale-95"
+            style={{
+              animation: "fadeInScale 0.4s ease forwards",
+            }}
+          >
             <ul className="md:hidden z-5 gap-6 flex flex-col justify-center items-center">
-              {
-                navLinks.map((link, index) => (
-                  <li key={index} className="hover:text-[#f97316] text-sm ">
-                      <NavLink 
-                        onClick={toggleNav}
-                        to={link.path}
-                        className={({isActive, isPending}) => (
-                          isActive ? "active" : isPending ? "pending" : ""
-                        ) }
-                      >
-                        {link.label}
-                      </NavLink>
-                  </li>
-                ))
-              }
+              {navLinks.map((link, index) => (
+                <li key={index} className="hover:text-[#f97316] text-sm">
+                  <NavLink
+                    onClick={toggleNav}
+                    to={link.path}
+                    className={({ isActive, isPending }) =>
+                      isActive ? "active" : isPending ? "pending" : ""
+                    }
+                  >
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
+
             <div className="block md:hidden mt-4">
-              <Button 
-                className="border border-neutral-800 px-6 py-2 rounded-md"
-                label="SignUp"
-              />
+              <Link to="/signup">
+                <Button
+                  className="border border-neutral-800 px-6 py-2 rounded-md"
+                  label="SignUp"
+                />
+              </Link>
             </div>
           </div>
+
+
         )
       }
 

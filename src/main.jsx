@@ -15,6 +15,7 @@ import GrowBusiness from './pages/GrowBusiness.jsx';
 import GraphicDesign from './pages/GraphicDesign.jsx';
 import WhatsappBusinessIntegration from './pages/WhatsappBusinessIntegration.jsx';
 import Error from './pages/Error.jsx';
+import SignUp from './components/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,11 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <Error />
+      },
+
+      {
+        path: "/signup",
+        element: <SignUp />
       }
       
     ]
