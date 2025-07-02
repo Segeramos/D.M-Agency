@@ -32,10 +32,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black py-16 px-4 sm:px-8 text-white relative">
+    <div className="min-h-screen bg-black py-16 px-4 sm:px-6 lg:px-8 text-white relative">
       {toast.show && <Toast message={toast.message} type={toast.type} />}
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      {/* Contact Section */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left: Contact Info */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
@@ -66,38 +67,69 @@ const Contact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium">First</label>
-              <input name="first_name" type="text" placeholder="First" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
+              <input
+                name="first_name"
+                type="text"
+                placeholder="First"
+                required
+                className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"
+              />
             </div>
             <div>
               <label className="block text-sm font-medium">Last</label>
-              <input name="last_name" type="text" placeholder="Last" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
+              <input
+                name="last_name"
+                type="text"
+                placeholder="Last"
+                required
+                className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"
+              />
             </div>
           </div>
 
           <div>
             <label className="block text-sm font-medium">Email</label>
-            <input name="email" type="email" placeholder="example@email.com" required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
+            <input
+              name="email"
+              type="email"
+              placeholder="example@email.com"
+              required
+              className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"
+            />
           </div>
 
           <div>
             <label className="block text-sm font-medium">Phone (optional)</label>
-            <input name="phone" type="text" placeholder="xxx-xxx-xxxx" className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white" />
+            <input
+              name="phone"
+              type="text"
+              placeholder="xxx-xxx-xxxx"
+              className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"
+            />
           </div>
 
           <div>
             <label className="block text-sm font-medium">Message</label>
-            <textarea name="message" rows="5" placeholder="Type your message ..." required className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"></textarea>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Type your message ..."
+              required
+              className="w-full border border-gray-300 rounded px-3 py-2 mt-1 bg-transparent text-white"
+            ></textarea>
           </div>
 
-          <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-8 rounded-full transition cursor-pointer">
+          <button
+            type="submit"
+            className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-8 rounded-full transition cursor-pointer"
+          >
             Submit
           </button>
         </form>
       </div>
 
       {/* Additional Section */}
-      <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-12">
-
+      <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Office Hours */}
         <div>
           <h3 className="text-xl font-semibold mb-2">🕒 Office Hours</h3>
@@ -111,12 +143,14 @@ const Contact = () => {
         {/* Newsletter Signup */}
         <div>
           <h3 className="text-xl font-semibold mb-2">📬 Subscribe to Our Newsletter</h3>
-          <p className="mb-4 text-white text-sm">Get free tips, updates and exclusive offers in your inbox.</p>
-          <form className="flex flex-col sm:flex-row gap-2 bg-orange-50 text-gray-600 rounded">
+          <p className="mb-4 text-white text-sm">
+            Get free tips, updates, and exclusive offers in your inbox.
+          </p>
+          <form className="flex flex-col sm:flex-row gap-2">
             <input
               type="email"
               placeholder="you@email.com"
-              className="flex-1 px-4 py-2 rounded"
+              className="flex-1 px-4 py-2 rounded bg-white text-gray-800"
             />
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">
               Subscribe
