@@ -12,7 +12,7 @@ const Hero = () => {
             className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/70 flex flex-col justify-center space-y-3 pl-2 md:pl-12 items-start">
+        <div className="absolute inset-0 bg-black/50 flex flex-col justify-center space-y-3 pl-2 md:pl-12 items-start">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 max-w-3xl">
                 Grow Your Business Online Smarter and Faster
             </h1>
