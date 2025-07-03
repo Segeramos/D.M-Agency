@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_as",
+  "info": {
+    "singularName": "service-a",
+    "pluralName": "service-as",
+    "displayName": "Service A"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

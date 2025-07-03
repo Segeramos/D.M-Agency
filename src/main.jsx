@@ -16,73 +16,37 @@ import GraphicDesign from './pages/GraphicDesign.jsx';
 import WhatsappBusinessIntegration from './pages/WhatsappBusinessIntegration.jsx';
 import Error from './pages/Error.jsx';
 import SignUp from './components/SignUp.jsx';
+import Login from './components/Login.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: <Home />
-      },
-       {
-        path: "/about",
-        element: <About />
-      },
-       {
-        path: "/services",
-        element: <Services />
-      },
-       
-       {
-        path: "/contact",
-        element: <Contact />
-      },
-      {
-        path: "/optimization-page",
-        element: <OptimizationPage />
-      },
-      {
-        path: "/pay-per-click-advertising-page",
-        element: <PPCAdvertisingPage />
-      },
-      {
-        path: "/social-media-management-page",
-        element: <SocialMediaManagementPage />
-      },
-      {
-        path: "/web-design-development-page",
-        element: <WebDesignDevelopmentPage />
-      },
-      {
-        path: "/grow-business",
-        element: <GrowBusiness />
-      },
-      {
-        path: "/graphic-design",
-        element: <GraphicDesign />
-      },
-      {
-        path: "/whats-app",
-        element: <WhatsappBusinessIntegration />
-      },
-      {
-        path: "*",
-        element: <Error />
-      },
-
-      {
-        path: "/signup",
-        element: <SignUp />
-      }
-      
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/services", element: <Services /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/optimization-page", element: <OptimizationPage /> },
+      { path: "/pay-per-click-advertising-page", element: <PPCAdvertisingPage /> },
+      { path: "/social-media-management-page", element: <SocialMediaManagementPage /> },
+      { path: "/web-design-development-page", element: <WebDesignDevelopmentPage /> },
+      { path: "/grow-business", element: <GrowBusiness /> },
+      { path: "/graphic-design", element: <GraphicDesign /> },
+      { path: "/whats-app", element: <WhatsappBusinessIntegration /> },
+      { path: "/signup", element: <SignUp /> },
+      { path: "*", element: <Error /> },
+      { path: "/login", element: <Login /> },
+      { path: "/dashboard", element: <Dashboard /> }
     ]
   }
-])
+]);
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+  </StrictMode>
+);
+
