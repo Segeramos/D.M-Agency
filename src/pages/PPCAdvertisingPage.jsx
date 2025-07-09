@@ -13,9 +13,9 @@ const PPCAdvertisingPage = () => {
         <p className="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
           Get instant visibility and measurable results with high-converting Google Ads and Facebook Ads. We design, target, and optimize campaigns that deliver maximum ROI with minimal waste.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
+        {/* <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
           Book a Free Strategy Call
-        </button>
+        </button> */}
       </section>
 
       {/* Why PPC Works */}

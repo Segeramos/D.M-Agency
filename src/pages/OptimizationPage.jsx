@@ -12,9 +12,9 @@ const OptimizationPage = () => {
         <p className="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
           Is your business invisible on Google? Our expert SEO Optimization services are designed to help you rank higher, attract the right audience, and turn organic traffic into real revenue.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
+        {/* <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
           Get Your Free Audit
-        </button>
+        </button> */}
       </section>
 
       {/* Why it matters */}

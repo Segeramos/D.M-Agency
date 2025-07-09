@@ -3,7 +3,7 @@ import React from 'react'
 
 const WhatsappBusinessIntegration = () => {
   return (
-    <div>WhatsappBusinessIntegration</div>
+    <div>Service coming soon</div>
   )
 }
 

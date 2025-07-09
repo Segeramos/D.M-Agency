@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import bannerImage from '../assets/images/about.jpg';
 
 
+
 const teamMembers = [
   { name: "Segera Amos", title: "Front-End Web Developer", img: "src/assets/images/amos.jpeg" },
   { name: "Joshua Kibwage", title: "Front-End Web Developer", img: "/images/team/sarah.jpg" },

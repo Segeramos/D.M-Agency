@@ -13,9 +13,9 @@ const GraphicDesign = () => {
         <p className="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
           We turn ideas into visual stories — from logos to social media designs, every pixel serves your brand. Captivating design starts here.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
+        {/* <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
           Book a Free Design Call
-        </button>
+        </button> */}
       </section>
 
       {/* Why Graphic Design Matters */}

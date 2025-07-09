@@ -1,5 +1,6 @@
 import React from 'react'
 import heroImg from '/hero.png'
+import hero1 from "/hero.png";
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
     <section className="w-full h-screen relative">
 
         <img 
-            src={heroImg} 
+            src={hero1} 
             alt="" 
             className="w-full h-full object-cover"
         />
@@ -34,6 +35,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-
-

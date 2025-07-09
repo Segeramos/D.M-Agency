@@ -12,9 +12,9 @@ const SocialMediaManagementPage = () => {
         <p className="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
           Build a loyal community and expand your reach on platforms like Facebook, Instagram, LinkedIn, and X. We handle everything from strategy to content creation and daily engagement.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
+        {/* <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition">
           Start With a Free Social Audit
-        </button>
+        </button> */}
       </section>
 
       {/* Why Social Media Matters */}
