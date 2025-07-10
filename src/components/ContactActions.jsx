@@ -40,7 +40,7 @@ const ContactActions = () => {
       url: 'https://calendly.com/bookie254'
     })
   }
-  className="bg-orange-500 hover:bg-orange-600 text-whiteq
+  className="bg-orange-500 hover:bg-orange-600 text-white
    px-6 py-3 rounded-xl flex items-center gap-2 transition cursor-pointer"
 >
   📅 <span>Book a Free Strategy Session</span>
