@@ -2,34 +2,34 @@ import React from "react";
 
 const articles = [
   {
-    image: "https://www.searchenginejournal.com/wp-content/uploads/2025/06/featured-297-384x202.webp",
-    category: "NEWS • WORDPRESS",
-    title: "Yoast SEO WordPress Plugin Adds Support For LLMs.Txt",
+    image: "https://static.semrush.com/blog/uploads/media/20/03/2003ccb9fc4ee1bbbd399d8ddf426ceb/5821a24e5e9b24fc74124d01a669df7c/AD_4nXdwmNZb0PKAA-elG3DM7VgIzLHffzSvEtk38zJAJ1gK_cKWfpVawwelrjsgmo1vkmakwN_-unqTDaVxcxE2dmvVoHJN8ehcTifY042NzaUdysz8mWERAXunft8St0CJb5KSxsL_qg.webp",
+    category: "DIGITAL MARKETING • PPC/SEO",
+    title: "What Is PPC? A Starter Guide to Pay-Per-Click Marketing",
     author: {
-      name: "Roger Montti",
-      avatar: "https://instantglamour.com/wp-content/uploads/photo-gallery/IMG_2002-pp-b.jpg",
+      name: " Hava Salsi",
+      avatar: "",
     },
     description:
-      "Yoast has added a one-click llms.txt feature designed to guide AI tools like ChatGPT and Gemini to important website content.",
-    readTime: "2 min read",
+      "Pay-per-click (PPC) marketing is a type of digital advertising that involves paying a fee each time someone clicks on your ads. ",
+    readTime: "14 min read",
     views: "4.9K Reads",
     date: "Jun 18, 2025",
-    link: "https://www.searchenginejournal.com/yoast-seo-plugin-llms/511019/",
+    link: "https://www.semrush.com/blog/what-is-ppc/",
   },
   {
-    image: "https://semiwiki.com/wp-content/uploads/2023/06/Reverse-Engineering-TechInsights.jpg",
-    category: "TECH INSIGHTS • AI",
-    title: "How OpenAI's GPT-5 Is Reshaping Business Automation",
+    image: "https://media.geeksforgeeks.org/wp-content/uploads/20240124121809/on-page-seo.jpeg",
+    category: "DIGITAL MARKETING • ON-PAGE SEO",
+    title: "On-page SEO",
     author: {
-      name: "Lena Willis",
-      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+      name: "Vlado Pavlik & Others",
+      avatar: "",
     },
     description:
-      "The next-gen GPT-5 offers enterprise-grade AI reasoning, built-in memory, and deeper API flexibility for developers.",
+      "On-page SEO is the key to making your web pages more relevant and user-friendly for both users and search engines. Learn how to apply the latest techniques, tools, and best practices from the top on-page SEO experts",
     readTime: "6 min read",
     views: "3.2K Reads",
     date: "Jun 19, 2025",
-    link: "https://medium.com/@lenawillis/gpt-5-business-automation",
+    link: "https://www.semrush.com/blog/category/seo/on-page-seo/",
   },
   {
     image: "https://media.licdn.com/dms/image/v2/D5612AQHRy_D0vBUIcg/article-cover_image-shrink_720_1280/B56ZUCzF.EGUAI-/0/1739508706794?e=2147483647&v=beta&t=DymPup_fvQeGJc2yjMd0JTsVAuMwwYtT-FqGybFQh0g",
@@ -59,7 +59,7 @@ const articles = [
     readTime: "5 min read",
     views: "6.1K Reads",
     date: "Jun 14, 2025",
-    link: "https://example.com/ai-search-trends",
+    link: "https://www.searchenginejournal.com/state-of-seo/",
   },
   {
     image: "https://cdn.prod.website-files.com/6719ad0ceed6d5aa24a83dcf/674b5421dd188bc887300d71_Web%20%26%20App%20dev.jpg",

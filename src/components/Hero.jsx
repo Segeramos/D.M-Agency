@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '/hero.png'
+
 import hero1 from "/hero.png";
 import { Link } from 'react-router-dom';
 
