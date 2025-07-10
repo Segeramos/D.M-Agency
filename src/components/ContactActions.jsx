@@ -41,7 +41,7 @@ const ContactActions = () => {
     })
   }
   className="bg-orange-500 hover:bg-orange-600 text-whiteq
-   px-6 py-3 rounded-xl flex items-center gap-2 transition"
+   px-6 py-3 rounded-xl flex items-center gap-2 transition cursor-pointer"
 >
   📅 <span>Book a Free Strategy Session</span>
 </button>
