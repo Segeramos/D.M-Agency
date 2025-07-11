@@ -13,7 +13,7 @@ const Accordion = () => {
   return (
     <section className="w-full">
 
-        <div className="w-full pb-20 flex justify-center">
+        <div className="w-full flex justify-center">
             <div className="max-w-3xl flex flex-col items-center p-8">
                 <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-center text-gray-300">
                     Got Questions? We’ve Got Answers

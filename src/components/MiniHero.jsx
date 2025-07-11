@@ -21,30 +21,28 @@ const MiniHero = () => {
         </div>
        
            
-        <div className="hero bg-base-200 min-h-screen w-[90%] mx-auto">
+        <div className="hero bg-base-200 w-[90%] mx-auto">
             <div className="hero-content flex flex-col md:flex-row items-center w-full">
                 <div className="w-1/2">
                     <img
                         src={miniImage}
-                        className="w-full rounded-lg shadow-2xl"
+                        className="w-full h-full object-cover rounded-lg shadow-2xl"
                     />
                 </div>
                 <div className="w-full md:w-1/2 p-4 md:p-6">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-400">
-    Powerful Digital Services to Elevate Your Brand
-  </h1>
-  <p className="py-4 text-sm sm:text-base text-gray-400">
-    From SEO to social media and stunning web design, we offer a full suite of marketing and development solutions designed to help you grow, engage, and convert. Whether you're starting fresh or scaling up, our expert services are built to deliver results.
-  </p>
-  <Link to='/services'>
-    <button className="bg-orange-700 px-6 py-2 rounded-md cursor-pointer hover:bg-orange-600 text-white text-sm sm:text-base">
-      Explore Our Services
-    </button>
-  </Link>
-</div>
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-400">
+                        Powerful Digital Services to Elevate Your Brand
+                    </h1>
+                    <p className="py-4 text-sm sm:text-base text-gray-400">
+                        From SEO to social media and stunning web design, we offer a full suite of marketing and development solutions designed to help you grow, engage, and convert. Whether you're starting fresh or scaling up, our expert services are built to deliver results.
+                    </p>
+                    <Link to='/services'>
+                        <button className="bg-orange-700 px-6 py-2 rounded-md cursor-pointer hover:bg-orange-600 text-white text-sm sm:text-base">
+                        Explore Our Services
+                        </button>
+                    </Link>
+                    </div>
             </div>
-            
-            
         </div>
       
     </section>
