@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
 import userIcon from '../assets/images/user.png';
+import logo from '../assets/images/logo.png';
 
 // navigation links
 const navLinks = [
@@ -22,9 +23,9 @@ const Navbar = () => {
   return (
     <nav className="w-full h-16 border-b border-neutral-800 sticky top-0 left-0 right-0 z-40 backdrop-blur-sm">
       <div className="w-[90%] mx-auto flex justify-between h-full items-center">
-        <Link to="/" className="text-orange-600 text-2xl font-semibold">
-          Bookie
-        </Link>
+      <Link to="/" className="inline-block">
+        <img src={logo} alt="Bookie Logo" className="h-10 w-auto" />
+      </Link>
 
         <div className="flex items-center gap-8">
           {/* Desktop Links */}
